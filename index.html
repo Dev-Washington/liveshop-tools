@@ -206,19 +206,46 @@
     <section class="section section--flat" id="smartscreen" aria-labelledby="smartscreenTitle">
       <div class="notice">
         <p class="eyebrow">Aviso do Windows</p>
-        <h2 id="smartscreenTitle">Se aparecer "Editor desconhecido"</h2>
+        <h2 id="smartscreenTitle">Se o Windows bloquear o instalador</h2>
         <p>
-          O instalador ainda não tem certificado de assinatura de código. Por isso o Windows
-          SmartScreen pode exibir a tela azul <em>"O Windows protegeu o computador"</em> na primeira
-          execução. Isso é esperado e não indica que o arquivo esteja comprometido.
+          O instalador ainda não tem certificado de assinatura de código. O Windows avisa sobre isso
+          de <strong>duas formas diferentes</strong>, e elas se resolvem de jeitos diferentes — vale
+          olhar qual delas apareceu na sua tela.
         </p>
-        <p>Para continuar:</p>
-        <ol class="notice__list">
-          <li>Clique em <strong>Mais informações</strong>.</li>
-          <li>Clique em <strong>Executar assim mesmo</strong>.</li>
-        </ol>
+
+        <div class="bloqueio">
+          <h3>1. Tela azul: "O Windows protegeu o computador"</h3>
+          <p>É o SmartScreen. Tem saída, e é rápida:</p>
+          <ol class="notice__list">
+            <li>Clique em <strong>Mais informações</strong>.</li>
+            <li>Clique em <strong>Executar assim mesmo</strong>.</li>
+          </ol>
+        </div>
+
+        <div class="bloqueio bloqueio--duro">
+          <h3>2. Caixa branca: "O controle inteligente de aplicativos bloqueou…"</h3>
+          <p>
+            Esse é o <strong>Controle Inteligente de Aplicativos</strong>, do Windows 11, e ele é
+            mais rígido: <strong>não existe "executar assim mesmo"</strong>. Os únicos botões são
+            <em>OK</em> e <em>Baixe aplicativos da Store</em>. Não adianta procurar a opção — ela não
+            está escondida, ela não existe.
+          </p>
+          <p>
+            Ele costuma estar ligado em computadores que vieram com o Windows 11 de fábrica, e
+            desligado em máquinas que foram atualizadas a partir do Windows 10. Por isso o problema
+            aparece só em algumas máquinas da equipe.
+          </p>
+          <p>
+            <strong>O que fazer:</strong> fale com a Administração antes de mexer. Desligar esse
+            recurso é possível, mas <strong>não tem volta</strong> — o Windows só permite religá-lo
+            reinstalando o sistema. A solução definitiva é o certificado de assinatura, que já está
+            encaminhado.
+          </p>
+        </div>
+
         <p class="notice__foot">
-          Na dúvida, confira que o arquivo veio da página de Releases oficial do repositório
+          Nos dois casos o aviso é sobre a <em>procedência</em> do arquivo, não sobre o conteúdo
+          dele. Na dúvida, confira que o arquivo veio da página de Releases oficial do repositório
           <code>Dev-Washington/liveshop-tools</code> — o botão de download desta página sempre
           aponta para lá.
         </p>

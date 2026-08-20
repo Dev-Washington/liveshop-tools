@@ -481,6 +481,40 @@ main {
   font-size: 13.5px;
 }
 
+/*
+ * Os dois avisos do Windows, lado a lado. Separar visualmente importa: quem
+ * chega aqui está com uma caixa de diálogo aberta na tela e precisa reconhecer
+ * qual das duas é antes de ler a instrução — seguir a instrução errada custa
+ * uma busca por um botão que não existe.
+ */
+.bloqueio {
+  margin-bottom: var(--ls-space-5);
+  padding: var(--ls-space-4) var(--ls-space-5);
+  border: 1px solid var(--ls-border);
+  border-left-width: 3px;
+  border-left-color: var(--ls-info);
+  border-radius: var(--ls-radius-sm);
+  background: var(--ls-background);
+}
+
+.bloqueio h3 {
+  margin: 0 0 var(--ls-space-3);
+  color: var(--ls-foreground);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bloqueio p:last-child,
+.bloqueio .notice__list:last-child {
+  margin-bottom: 0;
+}
+
+/* O segundo não tem saída pelo lado do usuário; a cor não deve prometer que tem. */
+.bloqueio--duro {
+  margin-bottom: var(--ls-space-4);
+  border-left-color: var(--ls-danger);
+}
+
 /* ── cards ───────────────────────────────────────────────────────────────── */
 
 .cards {

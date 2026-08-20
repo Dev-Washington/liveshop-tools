@@ -59,11 +59,67 @@
       <ol class="releases" reversed>
 
         <li>
-          <article class="release" data-current="true" aria-labelledby="v611">
+          <article class="release" data-current="true" aria-labelledby="v612">
+            <header class="release__head">
+              <h3 class="release__version" id="v612">
+                Versão 6.1.2
+                <span class="release__badge">Atual</span>
+              </h3>
+              <p class="release__date"><time datetime="2026-08-20">20 de agosto de 2026</time></p>
+            </header>
+
+            <p class="release__summary">
+              Voltada para as máquinas com Windows 11 que não conseguiam instalar o aplicativo, e
+              para dar uma saída a quem a atualização automática deixa na mão.
+            </p>
+
+            <h4 class="release__group">Novidades</h4>
+            <ul class="release__list">
+              <li>
+                A janela de atualização passou a oferecer o download pelo site. Se a atualização
+                automática falhar, dá para baixar o instalador e executá-lo por cima — os dados e a
+                configuração continuam onde estão.
+              </li>
+              <li>
+                O endereço do site aparece escrito na própria janela, e não só atrás do botão: em
+                computador sem navegador padrão configurado, o clique não abre nada.
+              </li>
+            </ul>
+
+            <h4 class="release__group">Correções</h4>
+            <ul class="release__list">
+              <li>
+                O site ensinava a clicar em &ldquo;Executar assim mesmo&rdquo; para qualquer aviso do
+                Windows. Esse botão só existe no aviso azul do SmartScreen — no bloqueio do Controle
+                Inteligente de Aplicativos do Windows 11 ele não existe, e a instrução mandava
+                procurar um botão que não está lá. Agora os dois avisos aparecem separados, cada um
+                com o que realmente resolve.
+              </li>
+              <li>
+                No erro de atualização, a tela dizia apenas &ldquo;Tentar de novo&rdquo;. Quando a
+                causa é a rede bloqueando o GitHub ou o Windows barrando o instalador, tentar de novo
+                falha pelo mesmo motivo — a pessoa ficava sem saída.
+              </li>
+            </ul>
+
+            <h4 class="release__group">Em andamento</h4>
+            <ul class="release__list">
+              <li>
+                <strong>Instalador sem assinatura digital.</strong> É a causa dos bloqueios do
+                Windows, e o único conserto definitivo é um certificado de assinatura de código —
+                que já está sendo providenciado. Enquanto isso, o site explica o que fazer em cada
+                caso. Máquinas com o Controle Inteligente de Aplicativos ligado não conseguem
+                instalar nem atualizar sozinhas até lá.
+              </li>
+            </ul>
+          </article>
+        </li>
+
+        <li>
+          <article class="release" aria-labelledby="v611">
             <header class="release__head">
               <h3 class="release__version" id="v611">
                 Versão 6.1.1
-                <span class="release__badge">Atual</span>
               </h3>
               <p class="release__date"><time datetime="2026-08-20">20 de agosto de 2026</time></p>
             </header>
