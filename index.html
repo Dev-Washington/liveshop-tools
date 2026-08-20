@@ -253,8 +253,24 @@
 
         <article class="card">
           <h3>Suporte</h3>
-          <p>Problemas na instalação, acesso negado ou nome não encontrado? Fale com a Administração.</p>
-          <a class="link-button" href="mailto:suporte@evarejoeducacao.com.br">suporte@evarejoeducacao.com.br</a>
+          <p>
+            Problemas na instalação, acesso negado ou nome não encontrado? Abra um chamado para a
+            Administração informando seu <strong>nome completo</strong> e o seu <strong>cargo</strong>.
+          </p>
+          <!--
+            Botão, e não `mailto:`: em máquina sem cliente de e-mail configurado
+            o link não faz nada, e a pessoa fica sem o endereço. Clicar copia.
+            `data-email` é a única fonte do endereço — o rótulo é preenchido a
+            partir dele em download.js, então os dois não têm como divergir.
+          -->
+          <button
+            type="button"
+            class="link-button"
+            id="supportEmail"
+            data-email="tecnologia@liveshopturbo.com.br"
+            aria-describedby="supportEmailHint"
+          ></button>
+          <p class="card__hint" id="supportEmailHint" role="status" aria-live="polite" hidden></p>
         </article>
       </div>
     </section>

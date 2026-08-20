@@ -537,6 +537,46 @@ main {
   color: var(--ls-accent-foreground);
 }
 
+/*
+ * O e-mail do suporte é um <button> e não um <a>: clicar copia. O botão não
+ * herda fonte nem fundo do documento, então esses três vêm de volta aqui.
+ */
+button.link-button {
+  background: none;
+  font-family: inherit;
+  line-height: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+button.link-button:focus-visible {
+  outline: 2px solid var(--ls-primary);
+  outline-offset: 3px;
+}
+
+/* Confirmação da cópia, logo abaixo do botão, dentro do mesmo cartão. */
+.card__hint {
+  margin: 0;
+  padding: var(--ls-space-3);
+  border: 1px solid var(--ls-border);
+  border-left-width: 3px;
+  border-radius: var(--ls-radius-sm);
+  background: var(--ls-surface-1);
+  color: var(--ls-muted-foreground);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.card__hint[data-tone='success'] {
+  border-left-color: var(--ls-primary);
+  color: var(--ls-foreground-soft);
+}
+
+.card__hint[data-tone='warn'] {
+  border-left-color: var(--ls-warn);
+  color: var(--ls-foreground-soft);
+}
+
 /* ── rodapé ──────────────────────────────────────────────────────────────── */
 
 .site-footer {

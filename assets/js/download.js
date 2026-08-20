@@ -163,6 +163,87 @@
       });
   }
 
+  // ── e-mail do suporte ─────────────────────────────────────────────────────
+  /*
+   * Clicar copia o endereço. A confirmação repete o que o chamado precisa
+   * levar (nome e cargo), porque um chamado sem isso não tem como ser
+   * atendido — a Administração não saberia quem liberar.
+   *
+   * Se a cópia falhar (navegador antigo, permissão negada, página aberta em
+   * `file://`), o endereço aparece no aviso para ser copiado à mão.
+   */
+  function setupSupportEmail() {
+    var trigger = document.getElementById('supportEmail');
+    var hint = document.getElementById('supportEmailHint');
+    if (!trigger || !hint) return;
+
+    var email = trigger.getAttribute('data-email');
+    trigger.textContent = email;
+
+    var timer = 0;
+
+    function show(message, tone) {
+      hint.hidden = false;
+      hint.textContent = message;
+      hint.setAttribute('data-tone', tone);
+      window.clearTimeout(timer);
+      timer = window.setTimeout(function () {
+        hint.hidden = true;
+        hint.textContent = '';
+      }, 12000);
+    }
+
+    function copiado() {
+      show(
+        'E-mail copiado: ' +
+          email +
+          '. Abra um chamado para esse endereço pedindo acesso e informe seu NOME completo e seu CARGO.',
+        'success'
+      );
+    }
+
+    function falhou() {
+      show(
+        'Não foi possível copiar automaticamente. Anote o endereço: ' +
+          email +
+          '. Abra um chamado pedindo acesso e informe seu NOME completo e seu CARGO.',
+        'warn'
+      );
+    }
+
+    /* Reserva para quem não tem a Clipboard API: campo temporário + execCommand. */
+    function copiarAntigo() {
+      var campo = document.createElement('textarea');
+      campo.value = email;
+      campo.setAttribute('readonly', '');
+      campo.style.position = 'fixed';
+      campo.style.top = '-1000px';
+      document.body.appendChild(campo);
+      campo.select();
+      var ok = false;
+      try {
+        ok = document.execCommand('copy');
+      } catch (error) {
+        ok = false;
+      }
+      document.body.removeChild(campo);
+      return ok;
+    }
+
+    trigger.addEventListener('click', function () {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(copiado, function () {
+          if (copiarAntigo()) copiado();
+          else falhou();
+        });
+        return;
+      }
+      if (copiarAntigo()) copiado();
+      else falhou();
+    });
+  }
+
   applyPlatform();
   loadRelease();
+  setupSupportEmail();
 })();
