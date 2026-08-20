@@ -32,7 +32,7 @@
   <rect x="28" y="58" width="184" height="10" rx="5" fill="#4a4a4a" />
   <rect x="28" y="76" width="140" height="8" rx="4" fill="#3d3d3d" />
 
-  <rect class="brand" x="28" y="102" width="150" height="38" rx="8" />
+  <rect class="brand" x="28" y="102" width="166" height="38" rx="8" />
   <path d="M46 114v11M41.5 120.5 46 125l4.5-4.5M40 131h12" stroke="#ffffff" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round" fill="none" />
   <text class="txt" x="62" y="126" font-size="12" font-weight="700" fill="#ffffff">Baixar para Windows</text>
