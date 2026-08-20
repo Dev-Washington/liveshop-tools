@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notas das versões — LiveShop Tools</title>
+  <meta
+    name="description"
+    content="Histórico de versões do LiveShop Tools Desktop: o que foi acrescentado, alterado e corrigido em cada atualização."
+  />
+  <meta name="theme-color" content="#252525" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <meta property="og:title" content="Notas das versões — LiveShop Tools" />
+  <meta property="og:description" content="O que mudou em cada versão do LiveShop Tools para Windows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/icon.png" />
+</head>
+
+<body>
+  <a class="skip-link" href="#historico">Ir direto para o histórico</a>
+
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="LiveShop Tools — início">
+      <img src="assets/img/logotools-login.png" alt="LiveShop Tools" width="132" height="55" />
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="./index.html">Baixar</a>
+      <a href="./index.html#como-instalar">Como instalar</a>
+      <a href="./index.html#requisitos">Requisitos</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero hero--compact" aria-labelledby="tituloVersoes">
+      <p class="eyebrow">Notas das versões</p>
+      <h1 id="tituloVersoes">O que mudou em cada atualização.</h1>
+      <p class="lead">
+        O aplicativo se atualiza sozinho: quando sai uma versão nova, ele avisa e instala com a sua
+        confirmação. Esta página existe para você saber <strong>o que</strong> mudou antes de aceitar.
+      </p>
+      <p class="download-note" data-tone="info">
+        A numeração começa em 6.1 porque o desktop continua a linha do sistema web v6 — não é um
+        produto novo, é o mesmo sistema fora do navegador.
+      </p>
+    </section>
+
+    <!-- ── histórico ───────────────────────────────────────────────────────
+         Cada versão é um <article class="release">. Para acrescentar uma
+         versão nova, copie o bloco abaixo e ponha no TOPO da lista: a mais
+         recente vem primeiro, e é ela que leva data-current.
+    ──────────────────────────────────────────────────────────────────────── -->
+    <section class="section section--flat" id="historico" aria-labelledby="historicoTitulo">
+      <h2 class="visually-hidden" id="historicoTitulo">Histórico de versões</h2>
+
+      <ol class="releases" reversed>
+
+        <li>
+          <article class="release" data-current="true" aria-labelledby="v610">
+            <header class="release__head">
+              <h3 class="release__version" id="v610">
+                Versão 6.1.0
+                <span class="release__badge">Atual</span>
+              </h3>
+              <p class="release__date"><time datetime="2026-08-20">20 de agosto de 2026</time></p>
+            </header>
+
+            <p class="release__summary">
+              Primeira versão do LiveShop Tools como aplicativo de Windows. O sistema deixa de
+              depender do navegador e passa a rodar instalado, com atualização automática.
+            </p>
+
+            <h4 class="release__group">Novidades</h4>
+            <ul class="release__list">
+              <li>Aplicativo instalável para Windows 10 e 11, com atalho no menu Iniciar e na área de trabalho.</li>
+              <li>Atualização automática: o aplicativo avisa quando sai versão nova e instala com a sua confirmação.</li>
+              <li>Entrar uma vez e continuar conectado, sem digitar o nome a cada abertura.</li>
+              <li>As ferramentas funcionam sem internet, usando a cópia local, e sincronizam quando a rede volta.</li>
+            </ul>
+
+            <h4 class="release__group">Alterações</h4>
+            <ul class="release__list">
+              <li>Tema escuro em todas as telas, sem alternância — a mesma aparência para todo mundo.</li>
+              <li>Os dados passaram a vir da pasta compartilhada da rede, no lugar do servidor do site.</li>
+              <li>A barra superior mostra as áreas numa linha só; o que não couber vai para o menu &ldquo;Mais&rdquo;.</li>
+              <li>Todas as telas passaram a verificar o cargo antes de abrir, não apenas três delas.</li>
+            </ul>
+
+            <h4 class="release__group">Removido</h4>
+            <ul class="release__list">
+              <li>O registro de auditoria (a antiga tela de Logs) saiu do sistema por completo.</li>
+            </ul>
+          </article>
+        </li>
+
+      </ol>
+
+      <p class="releases__foot">
+        Procurando os arquivos de uma versão específica?
+        <a class="link-button" id="releasesLink" href="https://github.com/Dev-Washington/liveshop-tools/releases" rel="noopener">
+          Ver os arquivos no GitHub
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>LiveShop Tools — E-Varejo Educação Ltda</p>
+    <p class="site-footer__meta">
+      Uso interno e restrito a colaboradores autorizados.
+    </p>
+  </footer>
+</body>
+</html>
