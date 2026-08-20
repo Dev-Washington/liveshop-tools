@@ -746,6 +746,28 @@ button.link-button:focus-visible {
   text-transform: uppercase;
 }
 
+/*
+ * "Em preparação" não pode parecer "Atual". Verde é a cor de "pode baixar", e
+ * é justamente o que essa versão ainda não é.
+ */
+.release__badge[data-state='preparo'] {
+  background: var(--ls-warn-soft);
+  border-color: var(--ls-warn);
+  color: var(--ls-warn);
+}
+
+.release__pending {
+  margin: 0 0 var(--ls-space-4);
+  padding: var(--ls-space-3);
+  border: 1px solid var(--ls-warn);
+  border-left-width: 3px;
+  border-radius: var(--ls-radius-sm);
+  background: var(--ls-warn-soft);
+  color: var(--ls-foreground-soft);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
 .release__date {
   margin: 0;
   color: var(--ls-muted-foreground);

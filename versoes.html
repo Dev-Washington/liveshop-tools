@@ -49,9 +49,16 @@
     </section>
 
     <!-- ── histórico ───────────────────────────────────────────────────────
-         Cada versão é um <article class="release">. Para acrescentar uma
+         Cada versão é um artigo da classe "release", com o atributo
+         data-version marcando qual versão ele descreve. Para acrescentar uma
          versão nova, copie o bloco abaixo e ponha no TOPO da lista: a mais
-         recente vem primeiro, e é ela que leva data-current.
+         recente vem primeiro.
+
+         NÃO escreva o selo "Atual" à mão. Quem o coloca é assets/js/versoes.js,
+         na versão que a API devolve como publicada — a entrada é escrita antes
+         de o build rodar, e durante esses quarenta minutos um selo fixo estaria
+         anunciando como atual uma versão que ainda não dá para baixar.
+         `data-version` é o que liga o bloco à release; sem ele o script ignora.
     ──────────────────────────────────────────────────────────────────────── -->
     <section class="section section--flat" id="historico" aria-labelledby="historicoTitulo">
       <h2 class="visually-hidden" id="historicoTitulo">Histórico de versões</h2>
@@ -59,11 +66,10 @@
       <ol class="releases" reversed>
 
         <li>
-          <article class="release" data-current="true" aria-labelledby="v612">
+          <article class="release" data-version="6.1.2" aria-labelledby="v612">
             <header class="release__head">
               <h3 class="release__version" id="v612">
                 Versão 6.1.2
-                <span class="release__badge">Atual</span>
               </h3>
               <p class="release__date"><time datetime="2026-08-20">20 de agosto de 2026</time></p>
             </header>
@@ -116,7 +122,7 @@
         </li>
 
         <li>
-          <article class="release" aria-labelledby="v611">
+          <article class="release" data-version="6.1.1" aria-labelledby="v611">
             <header class="release__head">
               <h3 class="release__version" id="v611">
                 Versão 6.1.1
@@ -180,7 +186,7 @@
         </li>
 
         <li>
-          <article class="release" aria-labelledby="v610">
+          <article class="release" data-version="6.1.0" aria-labelledby="v610">
             <header class="release__head">
               <h3 class="release__version" id="v610">
                 Versão 6.1.0
@@ -233,5 +239,7 @@
       Uso interno e restrito a colaboradores autorizados.
     </p>
   </footer>
+
+  <script src="assets/js/versoes.js"></script>
 </body>
 </html>
