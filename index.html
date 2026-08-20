@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LiveShop Tools para Windows — download</title>
+  <meta
+    name="description"
+    content="Baixe o LiveShop Tools Desktop para Windows 10 e 11 (x64). Os documentos, scripts e painéis do seu setor em um aplicativo, com o mesmo login que você já usa."
+  />
+  <meta name="theme-color" content="#252525" />
+  <link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <meta property="og:title" content="LiveShop Tools para Windows" />
+  <meta property="og:description" content="O LiveShop Tools no seu computador. Windows 10/11 x64." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/icon.png" />
+</head>
+
+<body>
+  <a class="skip-link" href="#download">Ir direto para o download</a>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="LiveShop Tools — início">
+      <img src="assets/img/logotools-login.png" alt="LiveShop Tools" width="132" height="55" />
+    </a>
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#como-instalar">Como instalar</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#smartscreen">SmartScreen</a>
+      <a href="#desinstalar">Desinstalar</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ── herói ─────────────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <p class="eyebrow">Aplicativo para Windows</p>
+      <h1 id="heroTitle">O LiveShop Tools direto no seu computador.</h1>
+      <p class="lead">
+        Os documentos, scripts e painéis do seu setor num aplicativo só — sem abrir o navegador, sem
+        cadastro novo. Você entra com o mesmo nome que a Administração cadastrou para você.
+      </p>
+
+      <div class="download" id="download">
+        <a class="download-button" id="downloadButton" href="https://github.com/Dev-Washington/liveshop-tools-desktop/releases/latest" rel="noopener">
+          <span class="download-button__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 3v12" />
+              <path d="m7 12 5 5 5-5" />
+              <path d="M5 21h14" />
+            </svg>
+          </span>
+          <span class="download-button__text">
+            <strong id="downloadLabel">Baixar para Windows</strong>
+            <small id="downloadMeta">Consultando a última versão…</small>
+          </span>
+        </a>
+
+        <p class="download-note" id="downloadNote" role="status" aria-live="polite"></p>
+      </div>
+
+      <figure class="hero-preview">
+        <img
+          src="assets/img/app-tela-inicial.png"
+          alt="Tela inicial do LiveShop Tools no Windows, em tema escuro, com os cards das áreas de Recursos Humanos, Analista de Dados, Gerente de Contas, Automação, Gestor de Projetos, Gerenciamento de Equipamento e Administração Tools."
+          width="1280"
+          height="800"
+          loading="lazy"
+        />
+        <figcaption>A tela inicial mostra apenas as áreas liberadas para o seu cargo.</figcaption>
+      </figure>
+
+      <!-- Aviso para quem não está no Windows. Preenchido por download.js. -->
+      <aside class="os-warning" id="osWarning" hidden>
+        <h2>Esta versão é para Windows</h2>
+        <p id="osWarningText"></p>
+      </aside>
+    </section>
+
+    <!-- ── como instalar ─────────────────────────────────────────────────── -->
+    <section class="section" id="como-instalar" aria-labelledby="instalarTitle">
+      <p class="eyebrow">Três passos</p>
+      <h2 id="instalarTitle">Como instalar</h2>
+
+      <ol class="steps">
+        <li class="step">
+          <div class="step__figure">
+            <img
+              src="assets/img/passo-1-download.svg"
+              alt="Tela do navegador com o arquivo LiveShop-Tools-Setup.exe recém-baixado."
+              width="420"
+              height="240"
+              loading="lazy"
+            />
+          </div>
+          <div class="step__body">
+            <span class="step__number" aria-hidden="true">1</span>
+            <h3>Baixe o instalador</h3>
+            <p>
+              Clique no botão acima. O arquivo <code>LiveShop-Tools-Setup.exe</code> vai para a sua
+              pasta de Downloads. O tamanho exato aparece no botão acima.
+            </p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__figure">
+            <img
+              src="assets/img/passo-2-instalador.svg"
+              alt="Assistente de instalação do LiveShop Tools mostrando a tela de boas-vindas em tema escuro."
+              width="420"
+              height="240"
+              loading="lazy"
+            />
+          </div>
+          <div class="step__body">
+            <span class="step__number" aria-hidden="true">2</span>
+            <h3>Execute e avance</h3>
+            <p>
+              Abra o arquivo e siga o assistente. A instalação é feita na sua conta de usuário —
+              <strong>não pede senha de administrador</strong>. Você pode escolher a pasta.
+            </p>
+          </div>
+        </li>
+
+        <li class="step">
+          <div class="step__figure">
+            <img
+              src="assets/img/passo-3-login.png"
+              alt="Tela de login do LiveShop Tools pedindo o nome completo."
+              width="1280"
+              height="800"
+              loading="lazy"
+            />
+          </div>
+          <div class="step__body">
+            <span class="step__number" aria-hidden="true">3</span>
+            <h3>Entre com seu nome</h3>
+            <p>
+              Na primeira abertura, informe seu nome completo como está cadastrado na Administração.
+              O app abre direto na área do seu cargo.
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ── requisitos ────────────────────────────────────────────────────── -->
+    <section class="section" id="requisitos" aria-labelledby="requisitosTitle">
+      <p class="eyebrow">Antes de instalar</p>
+      <h2 id="requisitosTitle">Requisitos</h2>
+
+      <ul class="requirements">
+        <li>
+          <h3>Sistema</h3>
+          <p>Windows 10 ou Windows 11, 64 bits (x64). Não há versão para 32 bits, ARM, macOS ou Linux.</p>
+        </li>
+        <li>
+          <h3>Espaço em disco</h3>
+          <p>Cerca de 500 MB livres: o instalador ocupa ~115 MB e a instalação, ~380 MB. Some o espaço dos documentos que você gerar.</p>
+        </li>
+        <li>
+          <h3>Memória</h3>
+          <p>4 GB de RAM. O Relatório de Captação, que faz OCR, roda mais confortável com 8 GB.</p>
+        </li>
+        <li>
+          <h3>Conexão</h3>
+          <p>
+            Necessária para baixar o instalador e para acessar a pasta compartilhada da equipe. As
+            ferramentas de documento funcionam offline, com a última cópia local dos dados.
+          </p>
+        </li>
+        <li>
+          <h3>Permissões</h3>
+          <p>Nenhuma. A instalação é por usuário e não exige conta de administrador.</p>
+        </li>
+        <li>
+          <h3>Acesso</h3>
+          <p>Seu nome precisa estar cadastrado pela Administração Tools, com um cargo atribuído.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ── SmartScreen ───────────────────────────────────────────────────── -->
+    <section class="section section--flat" id="smartscreen" aria-labelledby="smartscreenTitle">
+      <div class="notice">
+        <p class="eyebrow">Aviso do Windows</p>
+        <h2 id="smartscreenTitle">Se aparecer "Editor desconhecido"</h2>
+        <p>
+          O instalador ainda não tem certificado de assinatura de código. Por isso o Windows
+          SmartScreen pode exibir a tela azul <em>"O Windows protegeu o computador"</em> na primeira
+          execução. Isso é esperado e não indica que o arquivo esteja comprometido.
+        </p>
+        <p>Para continuar:</p>
+        <ol class="notice__list">
+          <li>Clique em <strong>Mais informações</strong>.</li>
+          <li>Clique em <strong>Executar assim mesmo</strong>.</li>
+        </ol>
+        <p class="notice__foot">
+          Na dúvida, confira que o arquivo veio da página de Releases oficial do repositório
+          <code>Dev-Washington/liveshop-tools-desktop</code> — o botão de download desta página
+          sempre aponta para lá.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── links ─────────────────────────────────────────────────────────── -->
+    <section class="section" id="desinstalar" aria-labelledby="linksTitle">
+      <p class="eyebrow">Mais</p>
+      <h2 id="linksTitle">Links úteis</h2>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Como desinstalar</h3>
+          <p>
+            Abra <strong>Configurações → Aplicativos → Aplicativos instalados</strong>, procure por
+            <strong>LiveShop Tools</strong> e clique em Desinstalar.
+          </p>
+          <p>
+            O desinstalador pergunta se você quer preservar os dados locais (preferências, sessão e
+            cache). Os arquivos da pasta compartilhada da equipe nunca são apagados.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Notas da versão</h3>
+          <p>Veja o que mudou em cada release, com data de publicação e arquivos disponíveis.</p>
+          <a class="link-button" href="https://github.com/Dev-Washington/liveshop-tools-desktop/releases" rel="noopener">
+            Ver todas as versões
+          </a>
+        </article>
+
+        <article class="card">
+          <h3>Suporte</h3>
+          <p>Problemas na instalação, acesso negado ou nome não encontrado? Fale com a Administração.</p>
+          <a class="link-button" href="mailto:suporte@evarejoeducacao.com.br">suporte@evarejoeducacao.com.br</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>LiveShop Tools — E-Varejo Educação Ltda</p>
+    <p class="site-footer__meta">
+      Uso interno e restrito a colaboradores autorizados.
+      <span id="footerVersion"></span>
+    </p>
+  </footer>
+
+  <script src="assets/js/download.js"></script>
+</body>
+</html>

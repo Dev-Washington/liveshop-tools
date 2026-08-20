@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240" width="420" height="240" role="img"
+  aria-label="Ilustração: janela do navegador com o arquivo LiveShop-Tools-Setup.exe baixado.">
+  <title>Passo 1 — baixar o instalador</title>
+
+  <defs>
+    <style>
+      .bg { fill: #252525; }
+      .chrome { fill: #2c2c2c; }
+      .panel { fill: #343434; }
+      .line { stroke: rgba(255,255,255,.11); stroke-width: 1; fill: none; }
+      .dim { fill: #b5b5b5; }
+      .soft { fill: #dcdcdc; }
+      .brand { fill: #379d00; }
+      .brand-bright { fill: #43b908; }
+      .txt { font-family: Inter, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="420" height="240" rx="8" />
+
+  <!-- barra do navegador -->
+  <rect class="chrome" x="0" y="0" width="420" height="34" rx="8" />
+  <rect class="chrome" x="0" y="22" width="420" height="12" />
+  <circle cx="18" cy="17" r="4" fill="#4a4a4a" />
+  <circle cx="32" cy="17" r="4" fill="#4a4a4a" />
+  <circle cx="46" cy="17" r="4" fill="#4a4a4a" />
+  <rect x="64" y="9" width="230" height="16" rx="8" fill="#3a3a3a" />
+  <rect x="74" y="15" width="120" height="4" rx="2" fill="#6a6a6a" />
+  <line class="line" x1="0" y1="34" x2="420" y2="34" />
+
+  <!-- página com o botão de download -->
+  <rect x="28" y="58" width="184" height="10" rx="5" fill="#4a4a4a" />
+  <rect x="28" y="76" width="140" height="8" rx="4" fill="#3d3d3d" />
+
+  <rect class="brand" x="28" y="102" width="150" height="38" rx="8" />
+  <path d="M46 114v11M41.5 120.5 46 125l4.5-4.5M40 131h12" stroke="#ffffff" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  <text class="txt" x="62" y="126" font-size="12" font-weight="700" fill="#ffffff">Baixar para Windows</text>
+
+  <!-- painel de downloads -->
+  <rect class="panel" x="228" y="52" width="168" height="72" rx="10" />
+  <rect class="line" x="228" y="52" width="168" height="72" rx="10" />
+  <text class="txt dim" x="242" y="72" font-size="9" font-weight="700" letter-spacing="1.2">DOWNLOADS</text>
+  <rect x="242" y="82" width="26" height="26" rx="6" fill="#294521" />
+  <path d="M255 89v10M251 95l4 4 4-4" stroke="#43b908" stroke-width="1.8" stroke-linecap="round"
+    stroke-linejoin="round" fill="none" />
+  <text class="txt soft" x="276" y="93" font-size="9.5" font-weight="600">LiveShop-Tools-Setup.exe</text>
+  <text class="txt dim" x="276" y="106" font-size="8.5">Concluído · 90 MB</text>
+
+  <!-- rodapé com dica -->
+  <rect x="28" y="176" width="368" height="40" rx="8" fill="#2c2c2c" />
+  <rect class="brand-bright" x="28" y="176" width="3" height="40" rx="1.5" />
+  <text class="txt dim" x="44" y="193" font-size="9.5">O arquivo vai para a sua pasta de Downloads.</text>
+  <text class="txt dim" x="44" y="207" font-size="9.5">São cerca de 90 MB.</text>
+</svg>
