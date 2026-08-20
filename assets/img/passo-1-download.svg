@@ -45,11 +45,11 @@
   <path d="M255 89v10M251 95l4 4 4-4" stroke="#43b908" stroke-width="1.8" stroke-linecap="round"
     stroke-linejoin="round" fill="none" />
   <text class="txt soft" x="276" y="93" font-size="9.5" font-weight="600">LiveShop-Tools-Setup.exe</text>
-  <text class="txt dim" x="276" y="106" font-size="8.5">Concluído · 90 MB</text>
+  <text class="txt dim" x="276" y="106" font-size="8.5">Concluído</text>
 
   <!-- rodapé com dica -->
   <rect x="28" y="176" width="368" height="40" rx="8" fill="#2c2c2c" />
   <rect class="brand-bright" x="28" y="176" width="3" height="40" rx="1.5" />
   <text class="txt dim" x="44" y="193" font-size="9.5">O arquivo vai para a sua pasta de Downloads.</text>
-  <text class="txt dim" x="44" y="207" font-size="9.5">São cerca de 90 MB.</text>
+  <text class="txt dim" x="44" y="207" font-size="9.5">O tamanho aparece no botão.</text>
 </svg>

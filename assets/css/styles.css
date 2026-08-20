@@ -730,3 +730,86 @@ main {
     align-items: flex-start;
   }
 }
+
+/* ── Como instalar: acabamentos da seção ──────────────────────────────────── */
+
+.section__lead {
+  max-width: 62ch;
+  margin: calc(var(--ls-space-2) * -1) 0 var(--ls-space-5);
+  color: var(--ls-muted-foreground);
+  font-size: 15.5px;
+}
+
+/* Alterna o lado da imagem para a lista não virar uma coluna monótona. */
+.step--reverse .step__figure {
+  order: 2;
+}
+.step--reverse .step__body {
+  order: 1;
+}
+
+/* Diz o que a imagem é. Duas das três são capturas reais do produto; a do
+   download é ilustração, e chamar as duas coisas de "imagem" esconderia
+   isso de quem está decidindo se confia no que vê. */
+.step__caption {
+  margin: var(--ls-space-2) 0 0;
+  color: var(--ls-muted-foreground-2, var(--ls-muted-foreground));
+  font-size: 12.5px;
+  text-align: center;
+}
+
+.step code {
+  padding: 1px 6px;
+  border: 1px solid var(--ls-border);
+  border-radius: var(--ls-radius-sm);
+  background: var(--ls-background);
+  color: var(--ls-foreground-soft);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.steps__foot {
+  margin: var(--ls-space-5) 0 0;
+  padding: var(--ls-space-4);
+  border: 1px solid var(--ls-border);
+  border-left: 3px solid var(--ls-warn);
+  border-radius: var(--ls-radius-sm);
+  background: var(--ls-warn-soft);
+  color: var(--ls-foreground-soft);
+  font-size: 14.5px;
+}
+.steps__foot a {
+  color: var(--ls-primary-hover);
+}
+
+@media (max-width: 860px) {
+  /* Empilhado, a alternância perde o sentido e só embaralha a ordem de leitura. */
+  .step--reverse .step__figure,
+  .step--reverse .step__body {
+    order: initial;
+  }
+}
+
+/* ── Correções de layout ──────────────────────────────────────────────────── */
+
+/* O cabeçalho é sticky, então um salto por âncora deixava o título da seção
+   escondido atrás dele. Vale para os quatro links do menu, não só para os
+   passos. A medida é a altura do cabeçalho mais uma folga de respiro. */
+:target,
+section[id],
+[id^='como-'],
+[id='requisitos'],
+[id='smartscreen'],
+[id='desinstalar'] {
+  scroll-margin-top: 104px;
+}
+
+/* As três imagens dos passos têm proporções diferentes (ilustração 420×240,
+   instalador 503×390, login 1280×800), o que deixava os cartões com alturas
+   bem desiguais. Uma caixa de proporção fixa iguala os três, e `contain`
+   garante que nenhuma captura seja cortada. */
+.step__figure img {
+  aspect-ratio: 16 / 10;
+  object-fit: contain;
+  padding: var(--ls-space-3);
+}

@@ -86,44 +86,53 @@
     <section class="section" id="como-instalar" aria-labelledby="instalarTitle">
       <p class="eyebrow">Três passos</p>
       <h2 id="instalarTitle">Como instalar</h2>
+      <p class="section__lead">
+        Do download ao primeiro login leva cerca de dois minutos. Você não precisa de senha de
+        administrador em nenhuma etapa.
+      </p>
 
       <ol class="steps">
         <li class="step">
           <div class="step__figure">
             <img
               src="assets/img/passo-1-download.svg"
-              alt="Tela do navegador com o arquivo LiveShop-Tools-Setup.exe recém-baixado."
+              alt="Janela do navegador mostrando o arquivo LiveShop-Tools-Setup.exe recém-baixado."
               width="420"
               height="240"
               loading="lazy"
             />
+            <p class="step__caption">Ilustração — o download no seu navegador</p>
           </div>
           <div class="step__body">
             <span class="step__number" aria-hidden="true">1</span>
             <h3>Baixe o instalador</h3>
             <p>
-              Clique no botão acima. O arquivo <code>LiveShop-Tools-Setup.exe</code> vai para a sua
-              pasta de Downloads. O tamanho exato aparece no botão acima.
+              Clique no botão verde no topo da página. O arquivo
+              <code id="stepFileName">LiveShop-Tools-Setup.exe</code> vai para a sua pasta de
+              Downloads — são cerca de <span id="stepFileSize">110 MB</span>, e leva menos de um
+              minuto numa conexão comum.
             </p>
           </div>
         </li>
 
-        <li class="step">
+        <li class="step step--reverse">
           <div class="step__figure">
             <img
-              src="assets/img/passo-2-instalador.svg"
-              alt="Assistente de instalação do LiveShop Tools mostrando a tela de boas-vindas em tema escuro."
-              width="420"
-              height="240"
+              src="assets/img/passo-2-instalador.png"
+              alt="Primeira tela do assistente de instalação do LiveShop Tools, em tema escuro, com o botão Próximo."
+              width="503"
+              height="390"
               loading="lazy"
             />
+            <p class="step__caption">Captura real — primeira tela do assistente</p>
           </div>
           <div class="step__body">
             <span class="step__number" aria-hidden="true">2</span>
             <h3>Execute e avance</h3>
             <p>
-              Abra o arquivo e siga o assistente. A instalação é feita na sua conta de usuário —
-              <strong>não pede senha de administrador</strong>. Você pode escolher a pasta.
+              Abra o arquivo baixado. O assistente tem quatro telas: boas-vindas, termos de uso,
+              pasta de instalação e conclusão. Em nenhuma delas o Windows pede senha de
+              administrador — <strong>a instalação é feita na sua conta de usuário</strong>.
             </p>
           </div>
         </li>
@@ -137,17 +146,24 @@
               height="800"
               loading="lazy"
             />
+            <p class="step__caption">Captura real — a tela de login</p>
           </div>
           <div class="step__body">
             <span class="step__number" aria-hidden="true">3</span>
             <h3>Entre com seu nome</h3>
             <p>
-              Na primeira abertura, informe seu nome completo como está cadastrado na Administração.
-              O app abre direto na área do seu cargo.
+              Na primeira abertura, informe seu nome completo exatamente como a Administração
+              cadastrou. O aplicativo abre direto na área do seu cargo, e da próxima vez você já
+              entra conectado.
             </p>
           </div>
         </li>
       </ol>
+
+      <p class="steps__foot">
+        Na primeira execução o Windows mostra um aviso azul de editor desconhecido.
+        <a href="#smartscreen">Veja por que isso acontece e o que fazer</a>.
+      </p>
     </section>
 
     <!-- ── requisitos ────────────────────────────────────────────────────── -->
@@ -162,7 +178,7 @@
         </li>
         <li>
           <h3>Espaço em disco</h3>
-          <p>Cerca de 500 MB livres: o instalador ocupa ~115 MB e a instalação, ~380 MB. Some o espaço dos documentos que você gerar.</p>
+          <p>Cerca de 500 MB livres: o instalador ocupa ~110 MB e a instalação, ~380 MB. Some o espaço dos documentos que você gerar.</p>
         </li>
         <li>
           <h3>Memória</h3>

@@ -30,6 +30,11 @@
   var osWarning = document.getElementById('osWarning');
   var osWarningText = document.getElementById('osWarningText');
   var footerVersion = document.getElementById('footerVersion');
+  // Passo 1 de "Como instalar": o nome do arquivo e o tamanho vinham escritos
+  // na página e envelheciam a cada release. Agora saem da mesma resposta da
+  // API que resolve o botão, então não há como divergirem do que se baixa.
+  var stepFileName = document.getElementById('stepFileName');
+  var stepFileSize = document.getElementById('stepFileSize');
 
   // ── formatação ────────────────────────────────────────────────────────────
 
@@ -148,6 +153,8 @@
         note.textContent = 'Windows 10/11 (64 bits) · arquivo ' + asset.name;
         note.dataset.tone = 'info';
 
+        if (stepFileName) stepFileName.textContent = asset.name;
+        if (stepFileSize) stepFileSize.textContent = formatBytes(asset.size);
         if (footerVersion) footerVersion.textContent = 'Versão publicada: ' + version + '.';
         document.title = 'LiveShop Tools ' + version + ' para Windows — download';
       })
