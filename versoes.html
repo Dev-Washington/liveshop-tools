@@ -66,6 +66,90 @@
       <ol class="releases" reversed>
 
         <li>
+          <article class="release" data-version="6.1.3" aria-labelledby="v613">
+            <header class="release__head">
+              <h3 class="release__version" id="v613">
+                Versão 6.1.3
+              </h3>
+              <p class="release__date"><time datetime="2026-08-21">21 de agosto de 2026</time></p>
+            </header>
+
+            <p class="release__summary">
+              A análise de pesquisa passou a entender qualquer formulário, parou de contar a mesma
+              resposta como se fossem várias, e o controle de equipamentos ganhou mouses.
+            </p>
+
+            <h4 class="release__group">Novidades</h4>
+            <ul class="release__list">
+              <li>
+                <strong>Qualquer pesquisa é entendida.</strong> Antes a tela procurava palavras fixas
+                no cabeçalho — se a pergunta não dizia &ldquo;receio&rdquo; ou &ldquo;produto&rdquo;,
+                o painel voltava vazio. Agora ela olha o que as pessoas responderam e descobre
+                sozinha o que cada coluna é, com um painel por pergunta do seu formulário.
+              </li>
+              <li>
+                <strong>Cobertura.</strong> Uma carta por pergunta mostrando quantos responderam e
+                quantos deixaram em branco — dá para ver na hora se alguma pergunta espantou a
+                galera.
+              </li>
+              <li>
+                <strong>Respostas Individuais.</strong> A planilha inteira dentro da tela, com busca
+                e paginação, para conferir qualquer número clicando até a resposta que o gerou.
+              </li>
+              <li>
+                <strong>Controle de Mouses.</strong> Cadastre os mouses da equipe com usuário, ID,
+                modelo e situação — do mesmo jeito que já se faz com máquinas e fones.
+              </li>
+              <li>
+                O <strong>Gerenciamento de Equipamento</strong> saiu da tela de cargos e passou a
+                ficar dentro da Administração Tools, junto dos outros módulos de gestão.
+              </li>
+            </ul>
+
+            <h4 class="release__group">Correções</h4>
+            <ul class="release__list">
+              <li>
+                A análise de pesquisa contava respostas por texto exato, então &ldquo;Scrub&rdquo; e
+                &ldquo;Scrubs&rdquo; viravam dois produtos diferentes, e &ldquo;Não servir&rdquo; e
+                &ldquo;Nao servir&rdquo; dois receios diferentes. Agora as grafias da mesma coisa são
+                somadas, e cada linha mostra o que foi reunido.
+              </li>
+              <li>
+                Quem responde &ldquo;Scrubs e jalecos&rdquo; passa a contar nos dois produtos, e não
+                numa terceira categoria à parte.
+              </li>
+              <li>
+                Por causa disso, os destaques do relatório estavam pela metade: numa pesquisa de 216
+                respostas, a principal objeção aparecia como 15% quando era 54%, e o produto mais
+                pedido como 13% quando era 35%.
+              </li>
+              <li>
+                No relatório impresso, &ldquo;Respostas Coletadas&rdquo;, &ldquo;Primeira
+                Resposta&rdquo; e &ldquo;Última Resposta&rdquo; saíam brancos sobre fundo branco, e
+                por isso não apareciam no papel nem no PDF.
+              </li>
+              <li>
+                A tela de pesquisa abria com jeito de zoom errado e precisava de rolagem para os
+                lados. Agora cabe inteira na janela, em qualquer largura — só rola para cima e para
+                baixo.
+              </li>
+              <li>
+                Sumiram duas coisas que não deviam estar lá: a barra de menu do Windows por cima das
+                telas e um botão redondo verde solto no canto.
+              </li>
+            </ul>
+
+            <h4 class="release__group">Em andamento</h4>
+            <ul class="release__list">
+              <li>
+                <strong>Instalador sem assinatura digital.</strong> Segue sendo a causa dos bloqueios
+                do Windows 11, e o certificado continua a caminho. Nada mudou nesta versão.
+              </li>
+            </ul>
+          </article>
+        </li>
+
+        <li>
           <article class="release" data-version="6.1.2" aria-labelledby="v612">
             <header class="release__head">
               <h3 class="release__version" id="v612">
